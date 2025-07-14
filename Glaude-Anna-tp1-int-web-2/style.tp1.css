@@ -1,0 +1,367 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.logo {
+  display: flex;
+  height: 100%;
+  width: 75%;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  border-bottom: 2px solid #4b3628;
+  background-color: #b39479;
+}
+
+
+.header__navliste {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.header__navliens {
+  text-decoration: none;
+  color: #4b3628;
+  font-size: 16px;
+  text-decoration: underline;
+}
+
+.header__navliens:hover {
+  color: black;
+}
+
+main {
+  background-color: #b39479;
+}
+
+.bannière {
+  position: relative;
+  text-align: center;
+  color: white;
+  width: 100%;
+  height: 600px;
+  max-width: 1500px;
+  margin: 0;
+  overflow: hidden;
+  }
+
+.bannière__image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  }
+
+.bannière__contenu {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0px auto;
+  max-width: 600px;
+  text-align: center;
+}
+
+.bannière__titre {
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+.bannière__paragraphes {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+.formulaire{
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.formulaire__boite {
+  width: 200px;
+  padding: 10px;
+  border: 2px solid #4b3628;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.formulaire__bouton {
+  margin: 20px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.statistique {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 40px;
+  padding: 60px 40px;
+
+  min-height: 400px;
+}
+
+.statistique__image {
+  display: flex;
+  max-width: 500px;
+}
+
+.statistique__image img {
+  display: block;
+  object-fit: contain;
+  width: 100%;
+  height: auto;
+}
+
+.statistique__contenu {
+  margin-bottom: 0;
+}
+
+.statistique__titre1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+  font-family: sans-serif;
+}
+
+.statistique__paragraphe1 {
+  font-size: 15px;
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+.statistique__contenuchiffres {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-top: auto;
+  flex-wrap: wrap;
+  
+}
+
+.statistiques__titre2 {
+  font-size: 30px;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.statistiques__paragraphe2 {
+  align-items: center;
+  font-size: 15px;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.statistique__bouton{
+width: 100%;
+display: flex;
+justify-content: center;
+margin-top: 20px;
+}
+
+.statistique__bouton-beige {
+  font-size: 20px;
+  padding: 10px 20px;
+  border: 3px solid black;
+  border-radius: 10px;
+  font-family: sans-serif;
+  text-decoration: none;
+  color: black;
+  background-color: rgb(238, 204, 162);
+}
+
+.statistique__bouton:hover {
+  color: black;
+}
+
+hr{
+  border-top: 4px solid #4b3628;
+  background-color: #b39479;
+}
+
+.logo__liens-petit {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 20px;
+  }
+
+  
+.liens__navliste {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 20px;
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+}
+
+.liens__navliste a {
+  display: inline-block;
+  text-decoration: none;
+  color: #4b3628;
+  font-size: 16px;
+  margin: 0 10px;
+  font-family: Arial, sans-serif;
+  text-decoration: underline;
+}
+
+.liens__navliste a:hover {
+  color: black;
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  background-color: #4b3628;
+}
+
+.footer__iconsreseaux {
+  display: flex;
+  gap: 15px;
+  font-size: 20px;
+  justify-content: center;
+  flex: 1 1 200px;
+}
+
+
+.footer__textecontact a {
+  text-decoration: underline;
+  color: white;
+}
+
+@media (max-width: 500px) {
+
+.header {
+  flex-direction: column;
+  text-align: center;
+  gap: 20px;
+}
+
+.header__navliste {
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.bannière {
+  padding: 20px;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.bannière__image {
+  width: 100%;
+  height: auto;
+  display: block;
+  max-width: 600px;
+  object-fit: cover;
+}
+
+.bannière__contenu {
+  padding: 0 10px;
+  width: 95%;
+  font-size: 12px;
+}
+
+.formulaire {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formulaire__boite {
+  width: 100%;
+  max-width: 300px;
+}
+
+.formulaire__bouton {
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.statistique {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.statistique__image {   
+  order: -1;               
+  max-width: 100%;             
+  text-align: center;      
+}
+
+.statistique__contenu { 
+  order: 1;                  
+  width: 100%;   
+  text-align: center;              
+}
+
+.statistique__image img {
+  width: 100%;
+  height: auto;
+}
+
+.statistique__bouton {
+  margin-top: 20px;
+}
+
+.statistique__contenuchiffres {
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+}
+
+/* je suis bloqué mon nav ne veux pas se mettre en vertical */
+
+.liens__navliste {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.liens__navliste a {
+  margin: 0;
+}
+
+.footer {
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer__iconsreseaux {
+  margin: 0 10px;
+  font-size: 18px;
+}
+
+.footer__textecontact div {
+  margin: 5px 0;
+}
+}
